@@ -1,0 +1,6 @@
+framework module Pods_Accidente_Rutiere {
+  umbrella header "Pods-Accidente Rutiere-umbrella.h"
+
+  export *
+  module * { export * }
+}
