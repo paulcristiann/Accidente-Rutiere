@@ -34,6 +34,12 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Aplicația are nevoie de localizarea ta actuală</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Aplicația are nevoie de cameră</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Aplicația are nevoie de acces la fotografii</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4BC7784271933491020B7A393813CB1E"
+               BlueprintIdentifier = "C7FB3AA1A960A16D5023039C1871689E"
                BuildableName = "Pods_Accidente_Rutiere.framework"
                BlueprintName = "Pods-Accidente Rutiere"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4BC7784271933491020B7A393813CB1E"
+            BlueprintIdentifier = "C7FB3AA1A960A16D5023039C1871689E"
             BuildableName = "Pods_Accidente_Rutiere.framework"
             BlueprintName = "Pods-Accidente Rutiere"
             ReferencedContainer = "container:Pods.xcodeproj">

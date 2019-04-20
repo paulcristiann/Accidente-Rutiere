@@ -1,13 +1,30 @@
 PODS:
+  - ImageSlideshow (1.7.0):
+    - ImageSlideshow/Core (= 1.7.0)
+  - ImageSlideshow/Core (1.7.0)
+  - PryntTrimmerView (3.0.0)
   - Realm (3.14.0):
     - Realm/Headers (= 3.14.0)
   - Realm/Headers (3.14.0)
   - RealmSwift (3.14.0):
     - Realm (= 3.14.0)
+  - SteviaLayout (4.4.4)
+  - YPImagePicker (3.5.3):
+    - PryntTrimmerView (~> 3.0.0)
+    - SteviaLayout (~> 4.4.1)
 
 DEPENDENCIES:
+  - ImageSlideshow (~> 1.6)
   - Realm (from `https://github.com/realm/realm-cocoa.git`)
   - RealmSwift (from `https://github.com/realm/realm-cocoa.git`)
+  - YPImagePicker
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ImageSlideshow
+    - PryntTrimmerView
+    - SteviaLayout
+    - YPImagePicker
 
 EXTERNAL SOURCES:
   Realm:
@@ -28,9 +45,13 @@ CHECKOUT OPTIONS:
     :submodules: true
 
 SPEC CHECKSUMS:
+  ImageSlideshow: f8eec5e37a980f60923b585ff23b0e140fd24018
+  PryntTrimmerView: 53ac64053c7ce63cb3e27f54090f52da0734891d
   Realm: 221b25919bb5a010a3c597d707f8df3492dcd93a
   RealmSwift: 28f22dfa6a27b9a778cfb09471558b6afcf1022c
+  SteviaLayout: 523469269059f2c6da02820bb2ff28a5fe0780aa
+  YPImagePicker: 5dd3814b47b1208e9c8cc8f6ef77fe90db3723b6
 
-PODFILE CHECKSUM: 0d4db38a6477e473845a097247d513455b0ff4bb
+PODFILE CHECKSUM: dc6f00baabe922219f282960e82d84afa8acbdca
 
 COCOAPODS: 1.6.1

@@ -16,6 +16,8 @@
 		68BD75652227CE480069B584 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68BD75642227CE480069B584 /* Assets.xcassets */; };
 		68BD75682227CE480069B584 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68BD75662227CE480069B584 /* LaunchScreen.storyboard */; };
 		68BD75702227D04E0069B584 /* AccidentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BD756F2227D04E0069B584 /* AccidentsTableViewCell.swift */; };
+		68F6E5872269F65800D8F048 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F6E5862269F65800D8F048 /* MapViewController.swift */; };
+		68F6E589226B6F1000D8F048 /* ImagesSlideshowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F6E588226B6F1000D8F048 /* ImagesSlideshowViewController.swift */; };
 		8E22B439EC5BB3B1C981176F /* Pods_Accidente_Rutiere.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E288E7A29A1D6F1EE6F5F487 /* Pods_Accidente_Rutiere.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +34,8 @@
 		68BD75672227CE480069B584 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68BD75692227CE480069B584 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68BD756F2227D04E0069B584 /* AccidentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccidentsTableViewCell.swift; sourceTree = "<group>"; };
+		68F6E5862269F65800D8F048 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		68F6E588226B6F1000D8F048 /* ImagesSlideshowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesSlideshowViewController.swift; sourceTree = "<group>"; };
 		D4187357BD9A73CB48982C51 /* Pods-Accidente Rutiere.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Accidente Rutiere.debug.xcconfig"; path = "Target Support Files/Pods-Accidente Rutiere/Pods-Accidente Rutiere.debug.xcconfig"; sourceTree = "<group>"; };
 		E288E7A29A1D6F1EE6F5F487 /* Pods_Accidente_Rutiere.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Accidente_Rutiere.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -63,6 +67,8 @@
 				68BD755F2227CE450069B584 /* AccidentsViewController.swift */,
 				68A4BFFB224FDF76000AD295 /* AddAccidentViewController.swift */,
 				684D99982268DF5F00A046BE /* AccidentDetailViewController.swift */,
+				68F6E5862269F65800D8F048 /* MapViewController.swift */,
+				68F6E588226B6F1000D8F048 /* ImagesSlideshowViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -195,15 +201,23 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Accidente Rutiere/Pods-Accidente Rutiere-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework",
+				"${BUILT_PRODUCTS_DIR}/PryntTrimmerView/PryntTrimmerView.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SteviaLayout/Stevia.framework",
+				"${BUILT_PRODUCTS_DIR}/YPImagePicker/YPImagePicker.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSlideshow.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PryntTrimmerView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stevia.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YPImagePicker.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -244,7 +258,9 @@
 				68BD75702227D04E0069B584 /* AccidentsTableViewCell.swift in Sources */,
 				68BD75602227CE450069B584 /* AccidentsViewController.swift in Sources */,
 				684D99992268DF5F00A046BE /* AccidentDetailViewController.swift in Sources */,
+				68F6E589226B6F1000D8F048 /* ImagesSlideshowViewController.swift in Sources */,
 				68BD755E2227CE450069B584 /* AppDelegate.swift in Sources */,
+				68F6E5872269F65800D8F048 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
