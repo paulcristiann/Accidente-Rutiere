@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import MapKit
 
 class AccidentsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -27,6 +28,8 @@ class AccidentsViewController: UIViewController, UITableViewDataSource, UITableV
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        var geocoder = CLGeocoder()
+        
         let accident = allAccidents[indexPath.row]
         
         let accidentCell = tableView.dequeueReusableCell(withIdentifier: "accidentCell") as! AccidentsTableViewCell
@@ -36,6 +39,54 @@ class AccidentsViewController: UIViewController, UITableViewDataSource, UITableV
         let dateResult = formatter.string(from: accident.Data)
         
         accidentCell.accidentLabel.text = "Accident din data " + dateResult
+        
+        if(accident.ImagesData.count > 0)
+        {
+            let image = UIImage(data: accident.ImagesData[0])
+            accidentCell.accidentImage.image = image
+        }else
+        {
+            accidentCell.accidentImage.image = UIImage(named: "none")
+        }
+        
+        
+        let location = CLLocation(latitude: CLLocationDegrees(accident.Latitude), longitude: CLLocationDegrees(accident.Longitude))
+        
+        geocoder.reverseGeocodeLocation(location) { placemarks, error in
+            
+            guard error == nil else {
+                print("*** Error in \(#function): \(error!.localizedDescription)")
+                //completion(nil)
+                return
+            }
+            
+            guard let placemark = placemarks?[0] else {
+                print("*** Error in \(#function): placemark is nil")
+                //completion(nil)
+                return
+            }
+            
+            guard placemark.location != nil else {
+                print("*** Error in \(#function): placemark is nil")
+                //completion(nil)
+                return
+            }
+            
+            let street = placemark.thoroughfare ?? "Stradă nerecunoscută"
+            let city = placemark.locality ?? "Oraș nerecunoscut"
+            let country = placemark.country ?? "Tară nerecunoscută"
+            
+            if(country == "Tară nerecunoscută")
+            {
+                accidentCell.labelLocatieAccident.text = "Locație necunoscută"
+            }else{
+                
+                accidentCell.labelLocatieAccident.text = street + ", " + city + ", " + country
+                
+            }
+            
+        }
+        
         
         return accidentCell
     }

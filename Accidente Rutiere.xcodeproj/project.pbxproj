@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		682A20E3226C87F7004EAA4E /* UrgenteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682A20E2226C87F7004EAA4E /* UrgenteViewController.swift */; };
 		684D99992268DF5F00A046BE /* AccidentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D99982268DF5F00A046BE /* AccidentDetailViewController.swift */; };
 		68A4BFF8224FDA74000AD295 /* Accident.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A4BFF7224FDA74000AD295 /* Accident.swift */; };
 		68A4BFFC224FDF76000AD295 /* AddAccidentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A4BFFB224FDF76000AD295 /* AddAccidentViewController.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		27B174DBD0C43D378B338AFE /* Pods-Accidente Rutiere.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Accidente Rutiere.release.xcconfig"; path = "Target Support Files/Pods-Accidente Rutiere/Pods-Accidente Rutiere.release.xcconfig"; sourceTree = "<group>"; };
+		682A20E2226C87F7004EAA4E /* UrgenteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrgenteViewController.swift; sourceTree = "<group>"; };
 		684D99982268DF5F00A046BE /* AccidentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccidentDetailViewController.swift; sourceTree = "<group>"; };
 		68A4BFF7224FDA74000AD295 /* Accident.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accident.swift; sourceTree = "<group>"; };
 		68A4BFFB224FDF76000AD295 /* AddAccidentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccidentViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				684D99982268DF5F00A046BE /* AccidentDetailViewController.swift */,
 				68F6E5862269F65800D8F048 /* MapViewController.swift */,
 				68F6E588226B6F1000D8F048 /* ImagesSlideshowViewController.swift */,
+				682A20E2226C87F7004EAA4E /* UrgenteViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				68BD75702227D04E0069B584 /* AccidentsTableViewCell.swift in Sources */,
 				68BD75602227CE450069B584 /* AccidentsViewController.swift in Sources */,
 				684D99992268DF5F00A046BE /* AccidentDetailViewController.swift in Sources */,
+				682A20E3226C87F7004EAA4E /* UrgenteViewController.swift in Sources */,
 				68F6E589226B6F1000D8F048 /* ImagesSlideshowViewController.swift in Sources */,
 				68BD755E2227CE450069B584 /* AppDelegate.swift in Sources */,
 				68F6E5872269F65800D8F048 /* MapViewController.swift in Sources */,

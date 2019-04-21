@@ -12,6 +12,10 @@ class AccidentsTableViewCell: UITableViewCell {
 
     @IBOutlet weak var accidentLabel: UILabel!
     
+    @IBOutlet weak var accidentImage: UIImageView!
+    
+    @IBOutlet weak var labelLocatieAccident: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

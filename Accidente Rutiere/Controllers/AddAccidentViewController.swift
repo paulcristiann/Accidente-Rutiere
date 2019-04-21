@@ -69,6 +69,7 @@ class AddAccidentsViewController: UIViewController, UINavigationControllerDelega
         var config = YPImagePickerConfiguration()
         config.libraryMediaType = .photo
         config.library.maxNumberOfItems = 10
+        config.showsFilters = false
         let picker = YPImagePicker(configuration: config)
         picker.didFinishPicking { [unowned picker] items, cancelled in
             for item in items {
