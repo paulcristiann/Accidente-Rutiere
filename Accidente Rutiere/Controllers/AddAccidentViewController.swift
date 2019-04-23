@@ -67,7 +67,7 @@ class AddAccidentsViewController: UIViewController, UINavigationControllerDelega
     
     @IBAction func addPhotos(_ sender: Any) {
         var config = YPImagePickerConfiguration()
-        config.libraryMediaType = .photo
+        config.library.mediaType = .photo
         config.library.maxNumberOfItems = 10
         config.showsFilters = false
         let picker = YPImagePicker(configuration: config)
